@@ -3,56 +3,73 @@
 package LinkedList;
 
 public class LinkedListUC6 {
-    static class Node {
+    Node head;
+
+    LinkedListUC6(){
+        head = null;
+    }
+    class Node {
         int data;
         Node next;
-    };
-
-    // Function to remove the last node of the linked list
-    static Node deleteLastNode(Node head)
-    {
-        if (head == null)
-            return null;
-
-        if (head.next == null) {
-            return null;
+    }
+    void push_back(int newElement) {
+        LinkedListUC6.Node newNode = new LinkedListUC6.Node();
+        newNode.data = newElement;
+        newNode.next = null;
+        if(head == null) {
+            head = newNode;
+        } else {
+            LinkedListUC6.Node temp = new LinkedListUC6.Node();
+            temp = head;
+            while(temp.next != null)
+                temp = temp.next;
+            temp.next = newNode;
         }
-
-        // Find the second last node
-        Node second_last = head;
-        while (second_last.next.next != null)
-            second_last = second_last.next;
-
-        // Change next of second last
-        second_last.next = null;
-
-        return head;
     }
-
-    // Function to push node at head
-    static Node push(Node head_ref, int new_data)
-    {
-        Node new_node = new Node();
-        new_node.data = new_data;
-        new_node.next = (head_ref);
-        (head_ref) = new_node;
-        return head_ref;
+    // Function to remove the last node of the linked list
+    void deleteLastNode() {
+        if (this.head != null) {
+            if (this.head.next == null) {
+                this.head = null;
+            } else {
+                Node temp = new Node();
+                temp = this.head;
+                while (temp.next.next != null)
+                    temp = temp.next;
+                Node lastNode = temp.next;
+                temp.next = null;
+                lastNode = null;
+            }
+        }
     }
-
+    void PrintList() {
+        Node temp = new Node();
+        temp = this.head;
+        if(temp != null) {
+            System.out.print("The list contains: ");
+            while(temp != null) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+            System.out.println();
+        } else {
+            System.out.println("The list is empty.");
+        }
+    }
     // Driver code
     public static void main(String args[])
     {
-        // Start with the empty list /
-        Node head = null;
+        LinkedListUC6 MyList = new LinkedListUC6();
 
-        // Use push() function to construct
-        // the below list 8 . 23 . 11 . 29 . 12 /
-        head = push(head, 70);
-        head = push(head, 30);
-        head = push(head, 56);
+        //Add three elements in the list.
+        MyList.push_back(56);
+        MyList.push_back(30);
+        MyList.push_back(70);
+        MyList.PrintList();
 
-        head = deleteLastNode(head);
-        for (Node temp = head; temp != null; temp = temp.next)
-            System.out.print(temp.data + " ");
+        //Delete the last node
+        System.out.println("After deletion of Last node: ");
+        MyList.deleteLastNode();
+        MyList.PrintList();
     }
 }
