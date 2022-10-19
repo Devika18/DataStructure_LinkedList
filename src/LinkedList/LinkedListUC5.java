@@ -1,3 +1,5 @@
+// Program to delete the first element in the LinkedList of sequence 56->30->70
+
 package LinkedList;
 
 class Node {

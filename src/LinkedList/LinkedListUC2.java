@@ -1,3 +1,5 @@
+// Program to create Linked List by adding 30 and 56 to 70
+
 package LinkedList;
 
 public class LinkedListUC2 {
