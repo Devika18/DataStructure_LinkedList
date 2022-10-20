@@ -17,22 +17,25 @@ public class MyNode <T> implements INode<T>{
 
     @Override
     public void setKey(T key) {
+
         this.key = key;
     }
 
     public INode<T> getNext() {
+
         return next;
     }
 
     @Override
     public void setNext(INode next) {
+
         this.next = next;
     }
 
     @Override
     public String toString() {
         StringBuilder myNodeString = new StringBuilder();
-        myNodeString.append("{"+"Key=").append(key).append('}');
+        myNodeString.append(key);
 
         if(next!=null) {
             myNodeString.append("->").append(next);
