@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5790c288-c237-48b5-b595-ef3beb982ac9" name="Changes" comment="" />
+    <list default="true" id="5790c288-c237-48b5-b595-ef3beb982ac9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/LinkedListUC8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +36,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.LinkedListUC7">
+  <component name="RunManager" selected="Application.LinkedListUC8">
     <configuration name="LinkedListUC4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LinkedList.LinkedListUC4" />
       <module name="Day14_LinkedList" />
@@ -86,8 +89,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UC5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedList.UC5" />
+    <configuration name="LinkedListUC8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList.LinkedListUC8" />
       <module name="Day14_LinkedList" />
       <extension name="coverage">
         <pattern>
@@ -101,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinkedListUC8" />
         <item itemvalue="Application.LinkedListUC7" />
         <item itemvalue="Application.LinkedListUC6" />
         <item itemvalue="Application.LinkedListUC4" />
         <item itemvalue="Application.LinkedListUC5" />
-        <item itemvalue="Application.UC5" />
       </list>
     </recent_temporary>
   </component>
